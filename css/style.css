@@ -14,7 +14,30 @@
 
 .clients img {
 
-    max-width: 150px;
+    max-width: 170px;
     filter: drop-shadow(1px, 1px, 1px, rgba(0,0,0,0.5));
 
+}
+
+.services ,.contact{
+    padding: 15px ;
+    background-color: rgb(207, 207, 207);
+    
+}
+
+.responsive-img {
+
+    margin-top: 5px;
+
+}
+
+
+footer {
+
+    padding: 20px 0px;
+
+}
+
+.portfolio, .about {
+    padding: 20px;
 }

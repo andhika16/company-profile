@@ -5,10 +5,11 @@
 
 
 document.addEventListener('DOMContentLoaded', function () {
-    var elems = document.querySelectorAll('.sidenav');
-    M.Sidenav.init(elems);
+    const side = document.querySelectorAll('.sidenav');
+    M.Sidenav.init(side, { draggable: true });
 
-    var slider = document.querySelectorAll('.slider');
+
+    const slider = document.querySelectorAll('.slider');
     M.Slider.init(slider, {
         indicators: false,
         height: 300,
@@ -16,7 +17,18 @@ document.addEventListener('DOMContentLoaded', function () {
         interval: 3000
     });
 
-    var elems = document.querySelectorAll('.parallax');
-    M.Parallax.init(elems);
+    const parallax = document.querySelectorAll('.parallax');
+    M.Parallax.init(parallax);
+
+    const portfolio = document.querySelectorAll('.responsive-img');
+    M.Materialbox.init(portfolio,);
+
+    const scroll = document.querySelectorAll('.scrollspy');
+    M.ScrollSpy.init(scroll, {
+        scrollOffset: 55,
+        throttle: 200
+    });
+
+
 });
 
